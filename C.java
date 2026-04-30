@@ -1,15 +1,18 @@
 import java.util.*;
 
-public class A {
+public class C {
     public static void main (String args []){
-        Scanner sc = new Scanner (System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        int[] marks = new int [3];
+        marks [0] = 90; // chemistry
+        marks [1] = 91; // maths
+        marks [2] = 95; // physics
+        // System.out.println (marks [0]);
+        // System.out.println (marks [1]);
+        // System.out.println (marks [2]);
 
-        int sum = (a+b);
-        
-        System.out.println(sum);
-        
+        for (int i=0; i<3; i++){
+            System.out.println(marks [i]);
+        }
     }
     
 }
