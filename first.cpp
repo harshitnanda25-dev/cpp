@@ -1,11 +1,14 @@
  #include <iostream>
  using namespace std;
 
- int main () {
-    int age;
-    cout<< "Enter your age ";
-    cin >> age;
-    cout << "Your age is = " << age << endl;
-    return 0;
+ int main(){
 
+   int a,b;
+
+   cout<< "Enter a number =";
+   cin >> a;
+   cout<< "Enter a number =";
+   cin>> b;
+   cout<< "Sum of two numbers = " << a+b;
+   return 0;
  }
