@@ -3,12 +3,21 @@
 
  int main(){
 
-   int a,b;
+   int marks;
 
-   cout<< "Enter a number =";
-   cin >> a;
-   cout<< "Enter a number =";
-   cin>> b;
-   cout<< "Sum of two numbers = " << a+b;
-   return 0;
+    cout<< "Enter your marks  "<< endl;
+    cin>> marks;
+
+    if (marks >90){
+      cout << "you have achieved grade A "<< endl;
+    }else if (marks >=80 && marks<=90){
+      cout << "You have achieved grade B " << endl;
+    }else {
+      cout<< "You have achieved grade C "<< endl;
+    }
+    return 0;
  }
+ 
+
+
+ 
