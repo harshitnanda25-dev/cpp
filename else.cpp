@@ -1,17 +1,14 @@
-#include <iostream>
-using namespace std;
+ #include <iostream>
+ using namespace std;
 
-int main(){
-    int year;
-
-    cout<< "Enter a year ";
-    cin>> year;
-
-    if ( (year % 4 == 0 && year % 100 !=0 ) || (year % 400 == 0) ) {
-        cout<< "Leap year ";
-    }
-    else {
-        cout<< "Not a leap year ";
-    }
-    return 0;
-}
+ int main() {
+   int n;
+   int sum = 0 ;
+   cout<< "Enter the number ";
+   cin>> n;
+   for ( int i = 1 ; i<=n ; i++){
+      sum = sum + i;
+   }
+   cout << "sum = "<< sum << endl;
+   return 0;
+ }
