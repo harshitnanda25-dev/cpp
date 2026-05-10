@@ -2,13 +2,20 @@
  using namespace std;
 
  int main() {
-   int n;
-   int sum = 0 ;
-   cout<< "Enter the number ";
-   cin>> n;
-   for ( int i = 1 ; i<=n ; i++){
-      sum = sum + i;
+  int n = 9; 
+  bool isPrime = true;
+
+  for (int i =2; i<n-1; i++ ){
+   if (n % i == 0){
+      isPrime = false;
+      break;
    }
-   cout << "sum = "<< sum << endl;
-   return 0;
+  }
+  if (isPrime){
+   cout<< "Prime number "<< endl;
+  }else {
+   cout << " Not a prime number "<< endl;
+  }
+  return 0;
+  
  }
