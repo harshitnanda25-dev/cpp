@@ -3,17 +3,37 @@ using namespace std;
 
 int main(){
 
-    int n = 1234;
-    int rev = 0;
+     int n = 123; 
 
-    while (n>0){
-        int digit = n % 10 ;
+     int digit = 0;
+     int sum = 1;
 
-       rev = rev *10 + digit;
+     while (n>0){
+        digit = n % 10; 
 
-       n= n / 10;
+        sum = sum * digit ;
 
-    }
-    cout << rev;
-    return 0;
+        n = n / 10;
+     }
+     cout << sum ;
+     return 0;
+ 
+
+  // count of numbers 
+    //    int n = 4244; 
+    //    int digit = 0;
+
+    //    int count = 0; 
+
+    //    while(n>0){
+    //     digit = n % 10; 
+
+    //     count++; 
+
+    //     n = n / 10;
+
+    //    }
+    //    cout<<  count ;
+    //    return 0;
+
 }
